@@ -1,0 +1,42 @@
+[
+	{
+		"question": "How large is a serving of cake?",
+		"answer": "Each serving is roughly 1-2\""
+	},
+	{
+		"question": "Can you provide a cutting guide?",
+		"answer": "Of course! I have cutting guides that I can provide you"
+	},
+	{
+		"question": "How many layers do the cakes have?",
+		"answer": "Each cake has 3 layers of filling and 4 layers of cake, making them around 4-4.5\" tall."
+	},
+	{
+		"question": "Do you provide nut-free cakes?",
+		"answer": "My cakes are prepared in a kitchen containing nuts, so I cannot guarantee them to be nut-free.  However, if you inform me ahead of time I will take every precaution to prevent cross-contamination."
+	},
+	{
+		"question": "What if the filling or cake type isn't listed?",
+		"answer": "I want to do what I can to make you happy, just let me know what you would like and I will try my best to make it happen, I will give you an adjusted quote depending on the request."
+	},
+	{
+		"question": "What's a dessert table?",
+		"answer": "Dessert tables are a great budget option for events that allow you to have an entire spread of treats for your guests."
+	},
+	{
+		"question": "What do you provide in each dessert table?",
+		"answer": "Each package includes bowls/dishes and serving utensils as well as table linens, signage, setup/teardown of the table, along with a 6\" cake.  (Price does not include take-away containers, but can be added)."
+	},
+	{
+		"question": "How do you come up with your prices?",
+		"answer": "Every cake is designed specifically with your event in mind.  I consider the complexity, materials, ingredients, number of servings, and time involved when deciding on a quoted price."
+	},
+	{
+		"question": "Do you do custom cake designs?",
+		"answer": "Absolutely! Contact me with the details and I will work with you until we make the design perfect"
+	},
+	{
+		"question": "I can't afford an elaborate cake, can you work with a small budget?",
+		"answer": "Of course! I work with a variety of budgets, get in touch with me and we can discuss how to make your event perfect and stay within your budget."
+	}
+]

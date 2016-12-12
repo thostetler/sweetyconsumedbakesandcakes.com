@@ -1,0 +1,36 @@
+[
+	{
+		"desc": "Simple Wedding Cake",
+		"extra": "Starts at $2-$3/Serving",
+		"lines": [
+			"Decorations can include silk flowers/fresh flowers, ribbons, sugar flowers, etc.",
+			"add $0.50/serving to cover completely in fondant"
+		]
+	},
+	{
+		"desc": "Intricate Wedding Cake",
+		"extra": "$4 and Up/Serving",
+		"lines": [
+			"Extensive work and detail, typically covered completely in fondant"
+		]
+	},
+	{
+		"desc": "Specialty Cake Batters",
+		"extra": "Add $0.50/Serving"
+	},
+	{
+		"desc": "Cheesecake Wedding Tiers",
+		"extra": "$6 and Up/Serving",
+		"lines": [
+			"Can be garnished with fresh fruit, flowers or chocolate accents"
+		]
+	},
+	{
+		"desc": "Cupcakes",
+		"extra": "$1.50 - $2/Serving"
+	},
+	{
+		"desc": "Wedding Toppers",
+		"extra": "Prices Vary"
+	}
+]

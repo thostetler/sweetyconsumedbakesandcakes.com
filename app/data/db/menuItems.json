@@ -1,0 +1,158 @@
+[
+	{
+		"title": "10\" Cheesecakes",
+		"subtitle": "Serves 12 - 14",
+		"items": [
+			{ "name": "Turtle" },
+			{ "name": "White Chocolate" },
+			{ "name": "Tiramisu" },
+			{ "name": "Baileys Irish Cream" },
+			{ "name": "Dulce de Leche" },
+			{ "name": "Banana’s Fosters" },
+			{ "name": "German Chocolate" },
+			{ "name": "Apple Brandy" },
+			{ "name": "Margarita" },
+			{ "name": "Orange-Dream Cycle", "extra": "(No-Bake)" },
+			{ "name": "Tropical Island" },
+			{ "name": "Grasshopper" },
+			{ "name": "Coconut Cream" },
+			{ "name": "Blueberry" },
+			{ "name": "Key Lime" },
+			{ "name": "N.Y. Style" },
+			{ "name": "Raspberry Swirl" },
+			{ "name": "Triple Chocolate" },
+			{ "name": "Cherry or Black Forest" },
+			{ "name": "Choc. Chip Cookie Dough" },
+			{ "name": "Strawberry Shortcake" },
+			{ "name": "Pumpkin" },
+			{ "name": "Maple Nut" },
+			{ "name": "Spiced Apple" },
+			{ "name": "Oreo" },
+			{ "name": "Reese’s" }
+		]
+	},
+	{
+		"title": "9\" Cakes",
+		"subtitle": "Double/Triple Layer",
+		"items": [
+			{ "name": "Bee Sting" },
+			{ "name": "Humming Bird" },
+			{ "name": "Italian Cream" },
+			{ "name": "Cherry Jubilee" },
+			{ "name": "Black Forest" },
+			{ "name": "Spiced Apple w/ Rum-caramel" },
+			{ "name": "Coffee Cake" },
+			{ "name": "Carrot Cake" },
+			{ "name": "Reese’s P.B." },
+			{ "name": "Spice" },
+			{ "name": "Hawaiian" },
+			{ "name": "Maple-Pecan" },
+			{ "name": "Chocolate" },
+			{ "name": "Vanilla" },
+			{ "name": "Yellow" },
+			{ "name": "German Chocolate" },
+			{ "name": "Strawberry" },
+			{ "name": "Banana Cream" },
+			{ "name": "White" },
+			{ "name": "Red Velvet" },
+			{ "name": "Oreo" },
+			{ "name": "Chocolate/P.b. w/ Salted Caramel" },
+			{ "name": "Boston Cream Pie", "extra": "(Banana Flavor Optional)" }
+		]
+	},
+	{
+		"title": "Bars",
+		"subtitle": "Serves 12 - 18",
+		"items": [
+			{ "name": "P.B. Chocolate Chunk" },
+			{ "name": "Pecan/Fruit" },
+			{ "name": "Cookie-Candy Bar" },
+			{ "name": "Pumpkin" },
+			{ "name": "Gooey Cake Gobs" },
+			{ "name": "Zucchini", "extra": "(Seasonal)" },
+			{ "name": "Strawberry-Rhubarb", "extra": "(Seasonal)" }
+		]
+	},
+	{
+		"title": "Cookies",
+		"subtitle": "Sold by the Dozen",
+		"items": [
+			{ "name": "P.B." },
+			{ "name": "Snicker-doodle" },
+			{ "name": "Sugar" },
+			{ "name": "Pumpkin" },
+			{ "name": "Thumb-Print" },
+			{ "name": "Oatmeal-Raisin" },
+			{ "name": "Choc. Chunk" },
+			{ "name": "Pineapple-Raisin Filled", "extra": "Additional charge if added to cookie trays" }
+		]
+	},
+	{
+		"title": "9\" Meringue/Cream Pies",
+		"subtitle": "",
+		"items": [
+			{ "name": "Lemon Meringue" },
+			{ "name": "Sunkist Meringue", "extra": "(Orange)" },
+			{ "name": "Banana Cream" },
+			{ "name": "Coconut Cream" },
+			{ "name": "Coconut Meringue" }
+		]
+	},
+	{
+		"title": "9\" Pies",
+		"subtitle": "",
+		"items": [
+			{ "name": "Bumble Berry" },
+			{ "name": "Triple Berry" },
+			{ "name": "Raspberry" },
+			{ "name": "Blueberry" },
+			{ "name": "Apple" },
+			{ "name": "Blackberry" },
+			{ "name": "Cherry" },
+			{ "name": "Pumpkin" },
+			{ "name": "Peach" }
+		]
+	},
+	{
+		"title": "No-Bake Pies",
+		"subtitle": "",
+		"items": [
+			{ "name": "Strawberry" },
+			{ "name": "Pistachio" },
+			{ "name": "Grasshopper" },
+			{ "name": "P.B. Choc." }
+		]
+	},
+	{
+		"title": "9\" Specialty Pies",
+		"subtitle": "",
+		"items": [
+			{ "name": "German Chocolate Coconut" },
+			{ "name": "Cran-Apple Walnut" },
+			{ "name": "Caramel-Pecan Cheesecake Pie" },
+			{ "name": "Pecan" },
+			{ "name": "Sweet Potato" }
+		]
+	},
+	{
+		"title": "Miscellaneous Goodies",
+		"subtitle": "",
+		"items": [
+			{ "name": "Tiramisu" },
+			{ "name": "Sticky Buns" },
+			{ "name": "Cinnamon Buns" },
+			{ "name": "Apple Dumplings" }
+		]
+	},
+	{
+		"title": "Dessert Tables",
+		"subtitle": "(Additional Details in FAQs)",
+		"items": [
+			{ "name": "Economy Package", "extra": "(Choose 4 - Excludes Candy)" },
+			{ "name": "Bronze Package", "extra": "(Choose 5)" },
+			{ "name": "Silver Package", "extra": "(Choose 12)" },
+			{ "name": "Gold Package", "extra": "(Choose 20)" },
+			{ "name": "Al-a-cart Package", "extra": "(Signage not included)" }
+		]
+	}
+]

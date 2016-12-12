@@ -1,0 +1,23 @@
+{
+  "name": "init",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.4.0",
+    "bootstrap-sass-official": "^3.2.0",
+    "jquery": "^3.1.1",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+  },
+  "appPath": "app",
+  "moduleName": "initApp",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}

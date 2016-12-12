@@ -1,0 +1,400 @@
+<!doctype html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<title>Sweetly Consumed Bakes &amp; Cakes</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<!-- build:css(.) styles/vendor.css -->
+		<!-- bower:css -->
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->
+	</head>
+<body ng-controller="mainController">
+
+	<!-- Navigation -->
+	<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+	<nav id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+			<li class="sidebar-brand">
+				<a href="#top" onclick=$("#menu-close").click();>Sweetly CB&amp;C</a>
+			</li>
+			<li>
+				<a href="#top" onclick=$("#menu-close").click();>Home</a>
+			</li>
+			<li>
+				<a href="#about" onclick=$("#menu-close").click();>About</a>
+			</li>
+			<li>
+				<a href="#treats" onclick=$("#menu-close").click();>Sweet Treats</a>
+			</li>
+			<li>
+				<a href="#portfolio" onclick=$("#menu-close").click();>Latest Creations</a>
+			</li>
+			<li>
+				<a href="#pricing" onclick=$("#menu-close").click();>Pricing</a>
+			</li>
+			<li>
+				<a href="#faqs" onclick=$("#menu-close").click();>Frequently Asked Questions</a>
+			</li>
+			<li>
+				<a href="#contact" onclick=$("#menu-close").click();>Directions/Contact Info</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Header -->
+	<header id="top" class="header">
+		<div class="text-vertical-center">
+			<h1>Sweetly Consumed Bakes &amp; Cakes</h1>
+			<h3>Simply Baked... Beautifully Made</h3>
+			<br>
+			<a href="#about" class="btn btn-light btn-lg">Find Out More</a>
+		</div>
+	</header>
+
+	<!-- About -->
+	<section id="about" class="about">
+		<h1 class="fancy text-center">Why I Love What I Do</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p>
+						It's true, even with the simplest of things we can make them
+						beautiful with a little creation and imagination. I love to
+						bake everything from fresh baked goods, pies, cakes,
+						cheesecakes, cookies and so much more. For me though it's
+						not just "baking". I love that you can take a simple
+						cake/dessert and turn it into a piece of art! It's such a
+						reward for me to see the reactions and friendships that
+						bring people together over food. It is the one common ground
+						we all share.
+					</p>
+					<p>
+						Everything from bridal showers, baby showers, weddings,
+						birthdays, anniversary's, picnics, holidays or even just a
+						day that is a "just because" day... How often do you know
+						somebody that needs a little pick me up or a little
+						something to just say "<strong>I'm thinking of you</strong>".
+					</p>
+					<p>
+						Someday's I think there isn't anything that a piece of cake
+						can't solve....then I look at my yard, cake obliviously
+						won't replace mowing the yard...unless I could bribe someone
+						to mow the yard for a piece of cake ;) ) haha. Sorry, just a
+						little humor.
+					</p>
+					<p>
+						While I would love to say that I am
+						an expert who has mastered it all, I would be lying to you
+						and myself... The truth is, I hope that no matter how old I
+						get or the amount of experience that I will have, I hope
+						that I will always be learning new techniques and new
+						things! The cake industry is always changing and is one that
+						allows your imagination to run wild with creation! My wish
+						is to always keep learning and to always be challenged by
+						the new, whatever that may be. I am one that will strive for
+						perfection until I do have it perfected, but I am always on
+						the search for a challenge.
+					</p>
+					<p>
+						Thank you so much, and I look forward to hearing from you and
+						hopefully being able to be a part of your truly special
+						memory.
+					</p>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+
+	<!-- Services -->
+	<section id="treats" class="services bg-primary">
+		<h1 class="fancy text-center">Sweet Treats</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h3 class="fancy-white">Current Menu</h3>
+					<small>(Click on an item to expand)</small>
+					<div class="panel-group" id="menu">
+						<div class="panel panel-default" ng-repeat="item in menuItems">
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#menu" href="#menuItems{{$index}}">
+									{{item.title}}
+								</a>
+								<small class="pull-right">{{item.subtitle}}</small>
+							</div>
+							<div id="menuItems{{$index}}" class="panel-collapse collapse">
+								<ul class="list-group" ng-repeat="i in item.items">
+									<li class="list-group-item">{{i.name}}<small class="pull-right">{{i.extra}}</small></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h3 class="fancy-white">Custom Cake Options</h3>
+					<br>
+					<div class="panel-group" id="flavors">
+						<div class="panel panel-default" ng-repeat="item in flavors">
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#flavors" href="#flavorsList{{$index}}">
+									{{item.name}}
+								</a>
+								<small class="pull-right">{{item.extra}}</small>
+							</div>
+							<div id="flavorsList{{$index}}" class="panel-collapse collapse">
+								<ul class="list-group" ng-repeat="i in item.flavors">
+									<li class="list-group-item">{{i}}</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<p class="after">
+						<em>* Cakes have 3 layers of filling and 4 layers of cake</em>
+					</p>
+					<p class="after">
+						<em>* Get in touch to discuss pricing details on all items</em>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="portfolio" class="about">
+		<h1 class="fancy text-center">Our Latest Creations</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- LightWidget WIDGET -->
+					<script src="//lightwidget.com/widgets/lightwidget.js"></script>
+					<iframe src="//lightwidget.com/widgets/e91be9d16a2b5082bc843712ceefb7bb.html" scrolling="no"
+						allowtransparency="true" class="lightwidget-widget text-center"
+						style="width: 100%; border: 0; overflow: hidden; text-align: center;">
+					</iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="pricing" class="bg-primary pricing">
+		<h1 class="fancy text-center">Pricing</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="list-group" ng-repeat="item in prices">
+						<div class="list-group-item price-item">
+							<h5 class="list-group-item-heading">
+								<strong>{{item.desc}}</strong>
+								<em class="pull-right">{{item.extra}}</em>
+							</h5>
+							<p class="list-group-item-text">
+								<ul>
+									<li ng-repeat="line in item.lines">{{line}}</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<h4>Serving Sizes</h4>
+					<em>
+						Below is an approximate guideline for the two most popular cake shapes. There are more shapes that a cake
+						can be made in, along with different serving amounts that it will equal from it as well.
+					</em>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Cake Tier</th>
+								<th>Round</th>
+								<th>Square</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="s in servingSizes">
+								<td>{{s.size}}</td>
+								<td>{{s.round}}</td>
+								<td>{{s.square}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+
+	<section id="faqs" class="faqs">
+		<h1 class="fancy text-center">
+			Frequently Asked Questions
+		</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<p ng-repeat="faq in faqs.slice(0, 7)">
+						<strong>{{faq.question}}</strong>
+						<em>{{faq.answer}}</em>
+					</p>
+				</div>
+				<div class="col-md-6">
+					<p ng-repeat="faq in faqs.slice(7)">
+						<strong>{{faq.question}}</strong>
+						<em>{{faq.answer}}</em>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="contact" class="bg-primary footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1 text-center">
+					<h4><strong>Sweetly Consumed Bakes &amp; Cakes</strong>
+					</h4>
+					<p>324 Coal Run Rd.
+						<br>Meyersdale, PA 15552</p>
+					<ul class="list-unstyled">
+						<li><i class="fa fa-phone fa-fw"></i> (301) 268-6999</li>
+						<li><i class="fa fa-envelope-o fa-fw"></i>
+							<a style="color: #fff" href="mailto:name@example.com">name@example.com</a>
+						</li>
+					</ul>
+					<br>
+					<ul class="list-inline">
+						<li>
+							<a href="https://www.facebook.com/sweetly.C.B.C.1/" style="color: #fff"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+						</li>
+						<li>
+							<a style="color: #fff" href="https://www.google.com/maps/dir//sweetly+consumed+bakes+and+cakes/@39.775288,-79.094509,17z?hl=en-US">
+								<i class="fa fa-map-marker fa-fw fa-3x"></i></a>
+						</li>
+						<li>
+							<a style="color: #fff" href="tel:3012686999"><i class="fa fa-phone fa-fw fa-3x"></i></a>
+						</li>
+						<li>
+							<a style="color: #fff" href="mailto:"><i class="fa fa-envelope fa-fw fa-3x"></i></a>
+						</li>
+					</ul>
+					<hr class="small">
+					<p style="color: #fff" class="text-muted">Copyright &copy; Sweetly Consumed Bakes &amp; Cakes 2016</p>
+				</div>
+			</div>
+		</div>
+		<a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+	</footer>
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+	 <script>
+		!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+		(A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+		r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+		}(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-XXXXX-X');
+		ga('send', 'pageview');
+	</script>
+
+	<script>
+		(function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+			t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+		})(window, document, '_gscq','script','//widgets.getsitecontrol.com/63894/script.js');
+	</script>
+
+	<!-- build:js(.) scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+		<!-- build:js({.tmp,app}) scripts/scripts.js -->
+		<script src="scripts/app.js"></script>
+		<!-- endbuild -->
+
+	<!-- Custom Theme JavaScript -->
+	<script>
+
+
+		// Closes the sidebar menu
+		$("#menu-close").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+		// Opens the sidebar menu
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+		// Scrolls to the selected menu item on the page
+		$(function() {
+			$('a[href*=\\#]:not([href=\\#],[data-toggle],[data-target],[data-slide])').click(function() {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+		//#to-top button appears after scrolling
+		var fixed = false;
+		$(document).scroll(function() {
+			if ($(this).scrollTop() > 250) {
+				if (!fixed) {
+					fixed = true;
+					// $('#to-top').css({position:'fixed', display:'block'});
+					$('#to-top').show("slow", function() {
+						$('#to-top').css({
+							position: 'fixed',
+							display: 'block'
+						});
+					});
+				}
+			} else {
+				if (fixed) {
+					fixed = false;
+					$('#to-top').hide("slow", function() {
+						$('#to-top').css({
+							display: 'none'
+						});
+					});
+				}
+			}
+		});
+		// Disable Google Maps scrolling
+		// See http://stackoverflow.com/a/25904582/1607849
+		// Disable scroll zooming and bind back the click event
+		var onMapMouseleaveHandler = function(event) {
+			var that = $(this);
+			that.on('click', onMapClickHandler);
+			that.off('mouseleave', onMapMouseleaveHandler);
+			that.find('iframe').css("pointer-events", "none");
+		}
+		var onMapClickHandler = function(event) {
+				var that = $(this);
+				// Disable the click handler until the user leaves the map area
+				that.off('click', onMapClickHandler);
+				// Enable scrolling zoom
+				that.find('iframe').css("pointer-events", "auto");
+				// Handle the mouse leave event
+				that.on('mouseleave', onMapMouseleaveHandler);
+			}
+			// Enable map zooming with mouse scroll when the user clicks the map
+		$('.map').on('click', onMapClickHandler);
+	</script>
+</body>
+</html>

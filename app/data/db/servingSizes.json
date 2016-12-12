@@ -1,0 +1,31 @@
+[
+	{
+		"size": "4 Inch",
+		"round": "6 Servings",
+		"square": "8 Servings"
+	},
+	{
+		"size": "6 Inch",
+		"round": "12 Servings",
+		"square": "18 Servings"
+	},
+	{
+		"size": "8 Inch",
+		"round": "28 Servings",
+		"square": "32 Servings"
+	},
+	{
+		"size": "10 Inch",
+		"round": "42 Servings",
+		"square": "50 Servings"
+	},
+	{
+		"size": "12 Inch",
+		"round": "56 Servings",
+		"square": "72 Servings"
+	},
+	{
+		"size": "14 Inch",
+		"round": "18 Servings"
+	}
+]

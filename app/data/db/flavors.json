@@ -1,0 +1,41 @@
+[
+	{
+		"name": "Traditional Cake Flavors",
+		"flavors": [
+			"Triple Chocolate",
+			"Vanilla Bean",
+			"Red Velvet",
+			"Cinnamon Bun Swirl",
+			"Lemon",
+			"Oreo"
+		]
+	},
+	{
+		"name": "Specialty Batters",
+		"extra": "Add $0.50/Serving",
+		"flavors": [
+			"Italian Cream",
+			"Spiced Apple",
+			"Reese's Chocolate",
+			"Decadent Carrot"
+		]
+	},
+	{
+		"name": "Optional Cake Fillings",
+		"extra": "Add $0.25 - $0.50/Serving",
+		"flavors": [
+			"Strawberry",
+			"Raspberry",
+			"Apricot",
+			"Lemon Curd",
+			"Traditional Buttercream",
+			"Whipped Buttercream (Vanilla, Almond)",
+			"Caramel",
+			"Brown Butter Rum",
+			"Peanut Buttercream",
+			"Spiced Buttercream",
+			"Whipped Chocolate Buttercream",
+			"Cookies n' Cream"
+		]
+	}
+]
