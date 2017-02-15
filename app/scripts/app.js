@@ -11,7 +11,7 @@
 angular
   .module('app', [])
   .controller('mainController', ['$scope', '$http', function ($scope, $http) {
-    $http.get('/sweetlycbc/data/data.json').then(function (res) {
+    $http.get('data/data.json').then(function (res) {
       var items = [
         'menuItems',
         'flavors',
